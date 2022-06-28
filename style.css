@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0 ;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    background: rgb(230, 218, 200);
+}
+.conteudo-principal{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+
+
+@media(min-width: 767px){
+    .conteudo-principal{
+        width: 750px;
+    }
+}
+@media(min-width: 992px){
+    .conteudo-principal{
+        width: 970px;
+    }
+}
+@media(min-width: 1200px){
+    .conteudo-principal{
+        width: 1170px;
+    }
+}
+@media(min-width: 1400px){
+    .conteudo-principal{
+        width: 1320px;
+    }
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*meu main*/
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.conteudo-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+@media(max-width:767px){
+    .conteudo-principal{
+        flex-direction: column;
+    }
+}
+@media(max-width:767px){
+    .conteudo-principal{
+        flex-basis: 300px;
+        height: 450px;
+    }
+}
+
+.box-img{
+    display: flex;
+}
+.box-img img{
+
+}
+@media(max-width: 767px){
+    img{
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+}
+.lado-da-escrita{
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+@media(max-width: 767px){
+    .lado-da-escrita{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 8px;
+    }
+
+}
+.perfume{
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(161, 161, 161);
+}
+.nome-produtor{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 2.1em;
+    font-family: 'Fraunces', serif;
+    line-height: 0.95;
+    color: rgb(10, 10, 17);
+}
+.informacoes{
+    color: black;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.precos{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+@media(max-width: 767px){
+    .precos{
+        padding: 34px;
+    }
+}
+.novo-preco{
+    font-size: 2.22em;
+    color: rgb(7, 100, 7);
+    font-family: 'Roboto', sans-serif;
+}
+.velho-preco{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    opacity: 0.75;
+}
+.link{
+    display: flex;
+    background-color: rgb(71, 156, 71);
+    color: aliceblue;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 6px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.link:hover{
+    background-color: rgb(129, 238, 129);
+    color: rgb(9, 63, 9);
+    transition: 0.5s;
+}
